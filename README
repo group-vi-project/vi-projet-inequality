@@ -1,0 +1,22 @@
+## Gender pay inequality
+
+This application allows users to study the gender pay gap in Switzerland.
+
+
+## Installation
+
+To install the requirements, execute:
+
+```
+pip install -r requirements.txt
+```
+
+
+## Usage
+
+To run the app, execute:
+
+```
+python ./src/app.py
+```
+
