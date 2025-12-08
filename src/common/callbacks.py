@@ -109,6 +109,7 @@ def get_callbacks(app):
         Input(ComponentIds.POSITION_SELECTOR, "value", allow_optional=True), # either position or region
     )
     def render_evolution(series, region, position):
+        # find the right view
         return EvolutionView().renderEvolution(series, region, position)
     
 

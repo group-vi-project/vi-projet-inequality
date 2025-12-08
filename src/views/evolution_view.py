@@ -1,11 +1,15 @@
 from dash import html, dcc, Input, Output
 import dash_mantine_components as dmc
+import plotly.express as px
 
 from views.view import View
 
 from common.constants import ComponentIds, ContainerIds, Series
 import common.components as components
+import pandas as pd
 
+DATA = pd.read_csv('data/inequality_by_region_position_year.csv')
+# columns: Year,Region,Position,Inequality
 
 class EvolutionView(View):
 
@@ -19,7 +23,7 @@ class EvolutionView(View):
             children=[
                 html.H3(self.label),
 
-                components.seriesSelector(),
+                components.seriesSelector(),    # selects REGION or POSITION
 
                 html.Div(id=ContainerIds.REGION_OR_POSITION_CONTAINER),
 
@@ -29,12 +33,33 @@ class EvolutionView(View):
     
     
     def renderEvolution(self, series, region, position):
-        # TODO replace by actual graph
+        # TOD0 replace by actual graph
+        df = DATA.copy()
         title = ""
         if series == Series.POSITION:
+            df = df[df["Position"] == position]
             title = f"Evolution des écarts salariaux de la position professionnelle : {position}"
+            line_field = "Region" # show a line for every region
         else:
+            df = df[df["Region"]==region]
             title = f"Evolution des écarts salariaux de la région : {region}"
-        return html.Div(title)
+            line_field = "Position"
+        
+        # Plot
+        fig = px.line(
+            df,
+            x="Year",
+            y="Inequality",
+            color=line_field,
+            markers=True,
+            labels={
+                "Inequality": "Écart salarial (%)",
+                "Year": "Année",
+                line_field: line_field,
+            },
+            title=title,
+        )
+        fig.update_layout(margin=dict(t=60, r=20, l=20, b=40))
+        return dcc.Graph(figure=fig)
     
     
