@@ -1,168 +1,240 @@
 Year,Region,Position,Inequality
+2022,Suisse,Position professionnelle - total,25.15
+2022,Suisse,Cadre supérieur et moyen,8.03
+2022,Suisse,Cadre inférieur,4.38
+2022,Suisse,Responsable de l'exécution des travaux,12.72
+2022,Suisse,Sans fonction de cadre,22.22
+2022,Région lémanique,Position professionnelle - total,16.89
 2022,Région lémanique,Cadre supérieur et moyen,5.9
 2022,Région lémanique,Cadre inférieur,3.6
 2022,Région lémanique,Responsable de l'exécution des travaux,3.79
 2022,Région lémanique,Sans fonction de cadre,14.3
+2022,Espace Mittelland,Position professionnelle - total,21.22
 2022,Espace Mittelland,Cadre supérieur et moyen,3.68
 2022,Espace Mittelland,Cadre inférieur,5.91
 2022,Espace Mittelland,Responsable de l'exécution des travaux,8.95
 2022,Espace Mittelland,Sans fonction de cadre,16.16
+2022,Nordwestschweiz,Position professionnelle - total,14.23
 2022,Nordwestschweiz,Cadre supérieur et moyen,4.1
 2022,Nordwestschweiz,Cadre inférieur,4.94
 2022,Nordwestschweiz,Responsable de l'exécution des travaux,
 2022,Nordwestschweiz,Sans fonction de cadre,15.67
+2022,Zürich,Position professionnelle - total,23.31
 2022,Zürich,Cadre supérieur et moyen,11.54
 2022,Zürich,Cadre inférieur,-10.7
 2022,Zürich,Responsable de l'exécution des travaux,0.72
 2022,Zürich,Sans fonction de cadre,23.54
+2022,Ostschweiz,Position professionnelle - total,31.14
 2022,Ostschweiz,Cadre supérieur et moyen,15.88
 2022,Ostschweiz,Cadre inférieur,22.54
 2022,Ostschweiz,Responsable de l'exécution des travaux,5.94
 2022,Ostschweiz,Sans fonction de cadre,27.69
+2022,Zentralschweiz,Position professionnelle - total,26.4
 2022,Zentralschweiz,Cadre supérieur et moyen,47.33
 2022,Zentralschweiz,Cadre inférieur,
 2022,Zentralschweiz,Responsable de l'exécution des travaux,
 2022,Zentralschweiz,Sans fonction de cadre,22.34
+2022,Ticino,Position professionnelle - total,25.53
 2022,Ticino,Cadre supérieur et moyen,
 2022,Ticino,Cadre inférieur,
 2022,Ticino,Responsable de l'exécution des travaux,
 2022,Ticino,Sans fonction de cadre,18.81
+2020,Suisse,Position professionnelle - total,27.45
+2020,Suisse,Cadre supérieur et moyen,6.72
+2020,Suisse,Cadre inférieur,9.4
+2020,Suisse,Responsable de l'exécution des travaux,17.02
+2020,Suisse,Sans fonction de cadre,22.19
+2020,Région lémanique,Position professionnelle - total,19.22
 2020,Région lémanique,Cadre supérieur et moyen,-23.12
 2020,Région lémanique,Cadre inférieur,-4.72
 2020,Région lémanique,Responsable de l'exécution des travaux,1.42
 2020,Région lémanique,Sans fonction de cadre,16.88
+2020,Espace Mittelland,Position professionnelle - total,23.01
 2020,Espace Mittelland,Cadre supérieur et moyen,8.3
 2020,Espace Mittelland,Cadre inférieur,7.91
 2020,Espace Mittelland,Responsable de l'exécution des travaux,16.98
 2020,Espace Mittelland,Sans fonction de cadre,17.49
+2020,Nordwestschweiz,Position professionnelle - total,23.4
 2020,Nordwestschweiz,Cadre supérieur et moyen,5.6
 2020,Nordwestschweiz,Cadre inférieur,3.57
 2020,Nordwestschweiz,Responsable de l'exécution des travaux,
 2020,Nordwestschweiz,Sans fonction de cadre,18.08
+2020,Zürich,Position professionnelle - total,25.18
 2020,Zürich,Cadre supérieur et moyen,10.82
 2020,Zürich,Cadre inférieur,20.68
 2020,Zürich,Responsable de l'exécution des travaux,8.31
 2020,Zürich,Sans fonction de cadre,24.08
+2020,Ostschweiz,Position professionnelle - total,29.8
 2020,Ostschweiz,Cadre supérieur et moyen,
 2020,Ostschweiz,Cadre inférieur,16.22
 2020,Ostschweiz,Responsable de l'exécution des travaux,14.5
 2020,Ostschweiz,Sans fonction de cadre,25.23
+2020,Zentralschweiz,Position professionnelle - total,24.42
 2020,Zentralschweiz,Cadre supérieur et moyen,48.16
 2020,Zentralschweiz,Cadre inférieur,
 2020,Zentralschweiz,Responsable de l'exécution des travaux,
 2020,Zentralschweiz,Sans fonction de cadre,19.73
+2020,Ticino,Position professionnelle - total,40.24
 2020,Ticino,Cadre supérieur et moyen,
 2020,Ticino,Cadre inférieur,
 2020,Ticino,Responsable de l'exécution des travaux,
 2020,Ticino,Sans fonction de cadre,34.72
+2018,Suisse,Position professionnelle - total,28.04
+2018,Suisse,Cadre supérieur et moyen,14.29
+2018,Suisse,Cadre inférieur,7.75
+2018,Suisse,Responsable de l'exécution des travaux,15.94
+2018,Suisse,Sans fonction de cadre,23.82
+2018,Région lémanique,Position professionnelle - total,18.46
 2018,Région lémanique,Cadre supérieur et moyen,
 2018,Région lémanique,Cadre inférieur,6.5
 2018,Région lémanique,Responsable de l'exécution des travaux,21.01
 2018,Région lémanique,Sans fonction de cadre,16.96
+2018,Espace Mittelland,Position professionnelle - total,23.22
 2018,Espace Mittelland,Cadre supérieur et moyen,7.34
 2018,Espace Mittelland,Cadre inférieur,3.34
 2018,Espace Mittelland,Responsable de l'exécution des travaux,10.87
 2018,Espace Mittelland,Sans fonction de cadre,17.21
+2018,Nordwestschweiz,Position professionnelle - total,21.63
 2018,Nordwestschweiz,Cadre supérieur et moyen,14.14
 2018,Nordwestschweiz,Cadre inférieur,4.12
 2018,Nordwestschweiz,Responsable de l'exécution des travaux,
 2018,Nordwestschweiz,Sans fonction de cadre,11.64
+2018,Zürich,Position professionnelle - total,28.48
 2018,Zürich,Cadre supérieur et moyen,16.95
 2018,Zürich,Cadre inférieur,10.78
 2018,Zürich,Responsable de l'exécution des travaux,4.87
 2018,Zürich,Sans fonction de cadre,25.52
+2018,Ostschweiz,Position professionnelle - total,31.49
 2018,Ostschweiz,Cadre supérieur et moyen,
 2018,Ostschweiz,Cadre inférieur,
 2018,Ostschweiz,Responsable de l'exécution des travaux,12.05
 2018,Ostschweiz,Sans fonction de cadre,27.93
+2018,Zentralschweiz,Position professionnelle - total,16.6
 2018,Zentralschweiz,Cadre supérieur et moyen,35.41
 2018,Zentralschweiz,Cadre inférieur,
 2018,Zentralschweiz,Responsable de l'exécution des travaux,
 2018,Zentralschweiz,Sans fonction de cadre,12.12
+2018,Ticino,Position professionnelle - total,32.84
 2018,Ticino,Cadre supérieur et moyen,
 2018,Ticino,Cadre inférieur,
 2018,Ticino,Responsable de l'exécution des travaux,
 2018,Ticino,Sans fonction de cadre,28.83
+2016,Suisse,Position professionnelle - total,29.0
+2016,Suisse,Cadre supérieur et moyen,10.63
+2016,Suisse,Cadre inférieur,11.32
+2016,Suisse,Responsable de l'exécution des travaux,19.28
+2016,Suisse,Sans fonction de cadre,24.77
+2016,Région lémanique,Position professionnelle - total,19.32
 2016,Région lémanique,Cadre supérieur et moyen,5.5
 2016,Région lémanique,Cadre inférieur,9.95
 2016,Région lémanique,Responsable de l'exécution des travaux,11.51
 2016,Région lémanique,Sans fonction de cadre,17.52
+2016,Espace Mittelland,Position professionnelle - total,23.33
 2016,Espace Mittelland,Cadre supérieur et moyen,12.94
 2016,Espace Mittelland,Cadre inférieur,8.05
 2016,Espace Mittelland,Responsable de l'exécution des travaux,17.02
 2016,Espace Mittelland,Sans fonction de cadre,18.46
+2016,Nordwestschweiz,Position professionnelle - total,23.95
 2016,Nordwestschweiz,Cadre supérieur et moyen,4.89
 2016,Nordwestschweiz,Cadre inférieur,3.5
 2016,Nordwestschweiz,Responsable de l'exécution des travaux,
 2016,Nordwestschweiz,Sans fonction de cadre,18.87
+2016,Zürich,Position professionnelle - total,33.54
 2016,Zürich,Cadre supérieur et moyen,13.61
 2016,Zürich,Cadre inférieur,15.24
 2016,Zürich,Responsable de l'exécution des travaux,10.12
 2016,Zürich,Sans fonction de cadre,29.46
+2016,Ostschweiz,Position professionnelle - total,35.85
 2016,Ostschweiz,Cadre supérieur et moyen,10.54
 2016,Ostschweiz,Cadre inférieur,
 2016,Ostschweiz,Responsable de l'exécution des travaux,
 2016,Ostschweiz,Sans fonction de cadre,30.89
+2016,Zentralschweiz,Position professionnelle - total,19.1
 2016,Zentralschweiz,Cadre supérieur et moyen,37.79
 2016,Zentralschweiz,Cadre inférieur,3.88
 2016,Zentralschweiz,Responsable de l'exécution des travaux,
 2016,Zentralschweiz,Sans fonction de cadre,16.04
+2016,Ticino,Position professionnelle - total,35.99
 2016,Ticino,Cadre supérieur et moyen,
 2016,Ticino,Cadre inférieur,
 2016,Ticino,Responsable de l'exécution des travaux,19.41
 2016,Ticino,Sans fonction de cadre,27.54
+2014,Suisse,Position professionnelle - total,29.18
+2014,Suisse,Cadre supérieur et moyen,9.44
+2014,Suisse,Cadre inférieur,10.18
+2014,Suisse,Responsable de l'exécution des travaux,19.49
+2014,Suisse,Sans fonction de cadre,23.78
+2014,Région lémanique,Position professionnelle - total,21.14
 2014,Région lémanique,Cadre supérieur et moyen,5.67
 2014,Région lémanique,Cadre inférieur,-1.56
 2014,Région lémanique,Responsable de l'exécution des travaux,16.37
 2014,Région lémanique,Sans fonction de cadre,18.56
+2014,Espace Mittelland,Position professionnelle - total,23.69
 2014,Espace Mittelland,Cadre supérieur et moyen,15.95
 2014,Espace Mittelland,Cadre inférieur,12.85
 2014,Espace Mittelland,Responsable de l'exécution des travaux,17.33
 2014,Espace Mittelland,Sans fonction de cadre,18.11
+2014,Nordwestschweiz,Position professionnelle - total,26.57
 2014,Nordwestschweiz,Cadre supérieur et moyen,10.08
 2014,Nordwestschweiz,Cadre inférieur,4.73
 2014,Nordwestschweiz,Responsable de l'exécution des travaux,
 2014,Nordwestschweiz,Sans fonction de cadre,19.8
+2014,Zürich,Position professionnelle - total,35.82
 2014,Zürich,Cadre supérieur et moyen,8.64
 2014,Zürich,Cadre inférieur,15.49
 2014,Zürich,Responsable de l'exécution des travaux,8.33
 2014,Zürich,Sans fonction de cadre,32.16
+2014,Ostschweiz,Position professionnelle - total,33.79
 2014,Ostschweiz,Cadre supérieur et moyen,
 2014,Ostschweiz,Cadre inférieur,
 2014,Ostschweiz,Responsable de l'exécution des travaux,22.89
 2014,Ostschweiz,Sans fonction de cadre,29.67
+2014,Zentralschweiz,Position professionnelle - total,22.47
 2014,Zentralschweiz,Cadre supérieur et moyen,-1.44
 2014,Zentralschweiz,Cadre inférieur,12.56
 2014,Zentralschweiz,Responsable de l'exécution des travaux,
 2014,Zentralschweiz,Sans fonction de cadre,20.22
+2014,Ticino,Position professionnelle - total,36.47
 2014,Ticino,Cadre supérieur et moyen,
 2014,Ticino,Cadre inférieur,
 2014,Ticino,Responsable de l'exécution des travaux,27.84
 2014,Ticino,Sans fonction de cadre,27.13
+2012,Suisse,Position professionnelle - total,32.03
+2012,Suisse,Cadre supérieur et moyen,18.61
+2012,Suisse,Cadre inférieur,12.58
+2012,Suisse,Responsable de l'exécution des travaux,19.12
+2012,Suisse,Sans fonction de cadre,26.51
+2012,Région lémanique,Position professionnelle - total,22.19
 2012,Région lémanique,Cadre supérieur et moyen,-2.14
 2012,Région lémanique,Cadre inférieur,1.23
 2012,Région lémanique,Responsable de l'exécution des travaux,15.91
 2012,Région lémanique,Sans fonction de cadre,20.4
+2012,Espace Mittelland,Position professionnelle - total,26.02
 2012,Espace Mittelland,Cadre supérieur et moyen,13.16
 2012,Espace Mittelland,Cadre inférieur,9.48
 2012,Espace Mittelland,Responsable de l'exécution des travaux,17.83
 2012,Espace Mittelland,Sans fonction de cadre,18.97
+2012,Nordwestschweiz,Position professionnelle - total,28.28
 2012,Nordwestschweiz,Cadre supérieur et moyen,32.36
 2012,Nordwestschweiz,Cadre inférieur,6.73
 2012,Nordwestschweiz,Responsable de l'exécution des travaux,
 2012,Nordwestschweiz,Sans fonction de cadre,19.8
+2012,Zürich,Position professionnelle - total,37.08
 2012,Zürich,Cadre supérieur et moyen,21.43
 2012,Zürich,Cadre inférieur,24.85
 2012,Zürich,Responsable de l'exécution des travaux,31.55
 2012,Zürich,Sans fonction de cadre,30.62
+2012,Ostschweiz,Position professionnelle - total,37.04
 2012,Ostschweiz,Cadre supérieur et moyen,
 2012,Ostschweiz,Cadre inférieur,
 2012,Ostschweiz,Responsable de l'exécution des travaux,27.1
 2012,Ostschweiz,Sans fonction de cadre,32.69
+2012,Zentralschweiz,Position professionnelle - total,25.35
 2012,Zentralschweiz,Cadre supérieur et moyen,8.66
 2012,Zentralschweiz,Cadre inférieur,5.3
 2012,Zentralschweiz,Responsable de l'exécution des travaux,12.68
 2012,Zentralschweiz,Sans fonction de cadre,23.74
+2012,Ticino,Position professionnelle - total,40.96
 2012,Ticino,Cadre supérieur et moyen,
 2012,Ticino,Cadre inférieur,
 2012,Ticino,Responsable de l'exécution des travaux,29.64
