@@ -84,21 +84,22 @@ def get_callbacks(app):
 
 
     # show the map
-    # @app.callback(
-    #     Output(ContainerIds.MAP_CONTAINER, "children"),
-    #     Input(ComponentIds.YEAR_SELECTOR, "value"),
-    # )
-    # def render_map(year):
-    #     return MapView().renderMap(year)
-    
-    # update map
     @app.callback(
         Output(ContainerIds.MAP_CONTAINER, "children"),
-        Input(StoreKeys.SHARED_STATE_STORE, "data")
+        Input(ComponentIds.YEAR_SELECTOR, "value"),
+        Input(ComponentIds.POSITION_SELECTOR, "value"),
     )
-    def update_map(shared_state):
-        year = shared_state.get(StoreKeys.SELECTED_YEAR, 2022)
-        return MapView().renderMap(year)
+    def render_map(year, position):
+        return MapView().renderMap(year, position)
+    
+    # update map
+    # @app.callback(
+    #     Output(ContainerIds.MAP_CONTAINER, "children"),
+    #     Input(StoreKeys.SHARED_STATE_STORE, "data")
+    # )
+    # def update_map(shared_state):
+    #     year = shared_state.get(StoreKeys.SELECTED_YEAR, 2022)
+    #     return MapView().renderMap(year)
     
 
     # show the evolution

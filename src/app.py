@@ -93,7 +93,8 @@ def render_page(path):
 
     for view in VIEWS:
         if path == "/"+view.id:
-            return view.render()
+            return view.render()    # for example MapView.render(self);
+                                    # returns dmc.stack with components.yearSelector()
 
 
 if __name__ == "__main__":
