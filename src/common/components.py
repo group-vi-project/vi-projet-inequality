@@ -7,8 +7,8 @@ def seriesSelector():
     return dmc.SegmentedControl(
         id=ComponentIds.SERIES_SELECTOR,
         data=[
-            {"label": "Par région", "value": Series.REGION},
-            {"label": "Par position professionnelle", "value": Series.POSITION},
+            {"label": "Salaires d'une région", "value": Series.REGION},
+            {"label": "Salaires d'une position professionnelle", "value": Series.POSITION},
         ],
         fullWidth=True,
         size="md",
