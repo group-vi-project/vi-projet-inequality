@@ -61,11 +61,8 @@ class MapView(View):
                             center=(8.2, 46.8),
                             zoom=8,
                             legend_kwds={'label': 'Inequality level'})
-            m.save('map.html')
-            with open('map.html', 'r') as f:
-                map_html = f.read()
             return html.Iframe(
-                srcDoc=map_html,
+                srcDoc=m.get_root().render(),
                 style={
                     'width': '100%',
                     'height': '70vh',
