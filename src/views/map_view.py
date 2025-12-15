@@ -7,6 +7,8 @@ from common.constants import ContainerIds
 import common.components as components
 import os
 
+gpd.explore._MAP_KWARGS += ["dragging", "scrollWheelZoom"]
+
 geofile_path = os.path.join(
     os.getcwd(), '..',
     '2025_GEOM_TK', '03_ANAL',
@@ -49,7 +51,15 @@ class MapView(View):
                                  left_on='name', right_on='Region', how='left')
             gdf = gdf.drop(columns=['id', 'name'])
             m = gdf.explore(column='Inequality',
-                            cmap='Reds',
+                            cmap='winter_r',
+                            legend=True,
+                            tiles="CartoDB Positron",
+                            zoom_control=False,
+                            scrollWheelZoom=False,
+                            touchZoom=False,
+                            dragging=False,
+                            center=(8.2, 46.8),
+                            zoom=8,
                             legend_kwds={'label': 'Inequality level'})
             m.save('map.html')
             with open('map.html', 'r') as f:
@@ -57,10 +67,10 @@ class MapView(View):
             return html.Iframe(
                 srcDoc=map_html,
                 style={
-                    'width': '90%',
+                    'width': '100%',
                     'height': '70vh',
                     'border': 'none'
-                }
+                },
             )
         except FileNotFoundError:
             return html.Div(
