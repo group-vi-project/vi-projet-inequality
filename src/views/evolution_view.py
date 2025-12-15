@@ -1,22 +1,27 @@
-from dash import html, dcc, Input, Output
+from dash import html, dcc
 import dash_mantine_components as dmc
 import plotly.express as px
 
 from views.view import View
 
-from common.constants import ComponentIds, ContainerIds, Series
+from common.constants import ContainerIds, Series
 import common.components as components
 import pandas as pd
+import os
 
-DATA = pd.read_csv('data/inequality_by_region_position_year.csv')
+data_path_file = os.path.join(
+    os.getcwd(), '..', 'data',
+    'inequality_by_region_position_year.csv'
+)
+DATA = pd.read_csv(data_path_file)
 # columns: Year,Region,Position,Inequality
+
 
 class EvolutionView(View):
 
     id = "evolution"
     label = "Evolution des écarts salariaux"
     icon = "tabler:timeline"
-
 
     def render(self):
         return dmc.Stack(
@@ -30,21 +35,22 @@ class EvolutionView(View):
                 components.dataContainer(id=ContainerIds.EVOLUTION_CONTAINER),
             ],
         )
-    
-    
+
     def renderEvolution(self, series, region, position):
         # TOD0 replace by actual graph
         df = DATA.copy()
         title = ""
         if series == Series.POSITION:
             df = df[df["Position"] == position]
-            title = f"Evolution des écarts salariaux de la position professionnelle : {position}"
-            line_field = "Region" # show a line for every region
+            title = (
+                "Evolution des écarts salariaux de la "
+                f"position professionnelle : {position}"
+            )
+            line_field = "Region"   # show a line for every region
         else:
-            df = df[df["Region"]==region]
+            df = df[df["Region"] == region]
             title = f"Evolution des écarts salariaux de la région : {region}"
             line_field = "Position"
-        
         # Plot
         fig = px.line(
             df,
@@ -61,5 +67,3 @@ class EvolutionView(View):
         )
         fig.update_layout(margin=dict(t=60, r=20, l=20, b=40))
         return dcc.Graph(figure=fig)
-    
-    
