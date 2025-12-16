@@ -74,7 +74,7 @@ class ComparisonsView(View):
                 marker_color=color[gender],
                 line_color=color[gender],
                 showlegend=True,
-                hoverinfo="y",
+                hoverinfo="y",  # pas possible de cacher les libellés min/max, cf. notamment https://community.plotly.com/t/customizing-traces-of-boxplot/82464
             ))
         
         # TODO ajotuer séparation entre Suisse et autres régions / entre Toutes positions prof et les autres
@@ -84,7 +84,9 @@ class ComparisonsView(View):
             title=title
         )
         fig.update_yaxes(title="Salaire en CHF")
-        graph = dcc.Graph(figure=fig)
+        graph = dcc.Graph(
+            figure=fig,
+            config=dict(locale="fr"))
 
         return html.Div(children=[
             graph,
