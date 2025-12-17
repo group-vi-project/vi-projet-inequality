@@ -67,7 +67,7 @@ class MapView(View):
         zoom_value = 8
         m = folium.Map(
             tiles=white_tile,
-            attr="white tile",
+            attr="Ecarts salariaux",
             zoom_control=False,
             scrollWheelZoom=False,
             dragging=False,
@@ -77,6 +77,7 @@ class MapView(View):
             max_zoom=zoom_value,  # avoid zooming with double click. Only works when tiles != None (bizarre...)
         )
 
+        # TODO palette couleurs colorblind-friendly
         cmap = cm.LinearColormap(
             ["green", "lightgreen", "white", "yellow", "orange", "red", "darkred"],
             index=[min_value, min_value/2.0, 0, max_value/4.0, max_value/2.0, 3*max_value/4.0, max_value],
