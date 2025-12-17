@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 import os
 
 data_path_file = os.path.join(
-    os.getcwd(), '..', 'data', '12-22_suisse_sect26_tout_tout.csv'
+    os.getcwd(), 'data', '12-22_suisse_sect26_tout_tout.csv'
 )
 
 COMPARISON_DATA = pd.read_csv(data_path_file, sep=';')

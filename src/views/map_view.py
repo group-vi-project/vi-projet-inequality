@@ -13,13 +13,13 @@ import branca.colormap as cm
 gpd.explore._MAP_KWARGS += ["dragging", "scrollWheelZoom"]
 
 geofile_path = os.path.join(
-    os.getcwd(), '..',
+    os.getcwd(),
     '2025_GEOM_TK', '03_ANAL',
     'Gesamtfläche_gf', 'K4_greg20001205_gf',
     'K4greg20001205gf_ch2007Poly.shp'
 )
 data_path_file = os.path.join(
-    os.getcwd(), '..', 'data',
+    os.getcwd(), 'data',
     'inequality_by_region_position_year.csv'
 )
 
