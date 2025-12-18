@@ -16,7 +16,7 @@ app = dash.Dash(
         __name__,
         suppress_callback_exceptions=True,
         # needed for callbacks using dynamically added components
-        title="Différences salariales femmes vs hommes par région",
+        title="Différences salariales femmes vs hommes",
     )
 
 VIEWS = [

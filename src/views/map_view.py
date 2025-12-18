@@ -82,7 +82,7 @@ class MapView(View):
             index=[min_value, 0, max_value/4.0, max_value/2.0, 3*max_value/4.0, max_value],
             vmin=min_value,
             vmax=max_value,
-            caption="Ecart (%)",
+            caption="Ecart (%): Combien les femmes gagnent moins que les hommes?",
             tick_labels=[min_value, 0, max_value/2.0, max_value],)
 
         folium.GeoJson(
