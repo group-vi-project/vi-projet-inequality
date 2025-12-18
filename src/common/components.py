@@ -8,7 +8,10 @@ def seriesSelector():
         id=ComponentIds.SERIES_SELECTOR,
         data=[
             {"label": "Salaires d'une région", "value": Series.REGION},
-            {"label": "Salaires d'une position professionnelle", "value": Series.POSITION},
+            {
+                "label": "Salaires d'une position professionnelle",
+                "value": Series.POSITION,
+            },
         ],
         fullWidth=True,
         size="md",
@@ -19,11 +22,26 @@ def positionSelector():
     return dmc.SegmentedControl(
         id=ComponentIds.POSITION_SELECTOR,
         data=[
-            {"label": "Toutes positions professionnelles", "value": "Position professionnelle - total"},
-            {"label": "Cadre supérieur et moyen", "value": "Cadre supérieur et moyen"},
-            {"label": "Cadre inférieur", "value": "Cadre inférieur"},
-            {"label": "Responsable de l'exécution des travaux", "value": "Responsable de l'exécution des travaux"},
-            {"label": "Sans fonction de cadre", "value": "Sans fonction de cadre"},
+            {
+                "label": "Toutes positions professionnelles",
+                "value": "Position professionnelle - total",
+            },
+            {
+                "label": "Cadre supérieur et moyen",
+                "value": "Cadre supérieur et moyen",
+            },
+            {
+                "label": "Cadre inférieur",
+                "value": "Cadre inférieur"
+            },
+            {
+                "label": "Responsable de l'exécution des travaux",
+                "value": "Responsable de l'exécution des travaux",
+            },
+            {
+                "label": "Sans fonction de cadre",
+                "value": "Sans fonction de cadre",
+            },
         ],
         fullWidth=True,
         size="md",
@@ -55,8 +73,10 @@ def yearSelector():
         restrictToMarks=True,
         min=2012,
         max=2022,
-        marks=[{"value": year, "label" : year} for year in range(2012, 2023, 2)],
+        marks=[{"value": year, "label": year}
+               for year in range(2012, 2023, 2)],
     )
+
 
 # a nice container
 def dataContainer(id):

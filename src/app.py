@@ -14,7 +14,8 @@ from common.constants import StoreKeys, Series
 
 app = dash.Dash(
         __name__,
-        suppress_callback_exceptions=True, # needed for callbacks using dynamically added components
+        suppress_callback_exceptions=True,
+        # needed for callbacks using dynamically added components
         title="Ecarts salariaux en Suisse",
     )
 
@@ -48,7 +49,11 @@ def serve_layout():
                     # navigation buttons
                     dmc.GridCol(
                         span=0,
-                        style={"borderRight": "1px solid #eee", "height": "100vh", "padding-right": "0"},
+                        style={
+                            "borderRight": "1px solid #eee",
+                            "height": "100vh",
+                            "padding-right": "0"
+                        },
                         children=navigation_buttons
                     ),
 
@@ -63,18 +68,22 @@ def serve_layout():
                 ],
             ),
 
-            # Initialize storage for the values selected by the user of the common component.
-            # It is needed in order to keep the state when navigating from one view (page) to the other
+            # Initialize storage for the values selected by the user
+            # of the common component. It is needed in order to keep the
+            # state when navigating from one view (page) to the other
             dcc.Store(id=StoreKeys.SHARED_STATE_STORE, data={
                 # set default values
                 StoreKeys.SELECTED_SERIES: Series.REGION,
                 StoreKeys.SELECTED_REGION: "Suisse",
-                StoreKeys.SELECTED_POSITION: "Position professionnelle - total",
+                StoreKeys.SELECTED_POSITION: (
+                    "Position professionnelle - total"
+                ),
                 StoreKeys.SELECTED_YEAR: 2022,
             })
         ]
     )
-    
+
+
 app.layout = serve_layout
 
 get_callbacks(app)
@@ -92,9 +101,10 @@ def render_page(path):
         return dcc.Location(href="/"+VIEWS[0].id, id="redirect")
 
     for view in VIEWS:
-        if path == "/"+view.id:
-            return view.render()    # for example MapView.render(self);
-                                    # returns dmc.stack with components.yearSelector()
+        if path == "/" + view.id:
+            # for example MapView.render(self) returns dmc.stack
+            # with components.yearSelector()
+            return view.render()
 
 
 if __name__ == "__main__":
