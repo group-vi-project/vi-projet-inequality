@@ -28,10 +28,9 @@ class InfoView(View):
             application provient de l'Enquête suisse sur
             la structure des salaires (ESS) réalisée par
             l'Office fédéral de la statistique (OFS).
-            Il est disponible sur le lien suivant [OFS - Enquête
-            suisse sur la structure des salaires (ESS)]
-            (https://www.bfs.admin.ch/bfs/fr/home/statistiques/travail-remuneration/enquetes/ess.html).
-            Notre analyse s'est limité au secteur _26 Fabrication de
+            Il est disponible sur le lien suivant [OFS - Enquête suisse sur la structure des salaires]
+            (https://www.bfs.admin.ch/bfs/fr/home/statistiques/travail-remuneration/salaires-revenus-cout-travail/structure-salaires.assetdetail.32030258.html).
+            Notre analyse s'est limitée au secteur _26 Fabrication de
             produits informatiques, électroniques et optiques/horlogerie_.
 
             ### A propos de cette application

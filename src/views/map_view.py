@@ -38,9 +38,7 @@ class MapView(View):
             children=[
                 html.H3(self.label),
                 components.positionSelector(),
-                # components.dataContainer(id=ContainerIds.MAP_CONTAINER),
-                html.Div(id=ContainerIds.MAP_CONTAINER),
-
+                components.dataContainer(id=ContainerIds.MAP_CONTAINER),
                 components.yearSelector()
             ],
         )
@@ -105,7 +103,7 @@ class MapView(View):
         # add legend:
         cmap.add_to(m)
 
-        return html.Iframe(
+        iframe = html.Iframe(
             srcDoc=m.get_root().render(),
             style={
                     'width': '100%',
@@ -113,3 +111,7 @@ class MapView(View):
                     'border': 'none'
                 },
         )
+        return html.Div(children=[
+            iframe,
+            components.sourceInfo(),
+        ])
