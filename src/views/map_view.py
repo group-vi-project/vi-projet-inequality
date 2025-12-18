@@ -48,7 +48,7 @@ class MapView(View):
 
     def color(self, value, cmap):
         if value is None:
-            return "#bdbdbd"  # grey
+            return "#dadada"  # grey
         return cmap(value)
 
 
@@ -77,10 +77,9 @@ class MapView(View):
             max_zoom=zoom_value,  # avoid zooming with double click. Only works when tiles != None (bizarre...)
         )
 
-        # TODO palette couleurs colorblind-friendly
         cmap = cm.LinearColormap(
-            ["green", "lightgreen", "white", "yellow", "orange", "red", "darkred"],
-            index=[min_value, min_value/2.0, 0, max_value/4.0, max_value/2.0, 3*max_value/4.0, max_value],
+            ["blueviolet", "white", "yellow", "orange", "red", "darkred"],
+            index=[min_value, 0, max_value/4.0, max_value/2.0, 3*max_value/4.0, max_value],
             vmin=min_value,
             vmax=max_value,
             caption="Ecart (%)",
@@ -92,7 +91,7 @@ class MapView(View):
                 "fillColor": self.color(feature["properties"]["Inequality"], cmap),
                 "color": "black",
                 "weight": 0.5,
-                "fillOpacity": 0.7,
+                "fillOpacity": 1,
             },
             tooltip=folium.GeoJsonTooltip(
                 fields=["Region", "Inequality"],
