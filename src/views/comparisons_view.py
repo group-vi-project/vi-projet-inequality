@@ -83,17 +83,29 @@ class ComparisonsView(View):
                 showlegend=True,
                 hoverinfo="y",  # pas possible de cacher les libellés min/max, cf. notamment https://community.plotly.com/t/customizing-traces-of-boxplot/82464
             ))
-        # TODO ajotuer séparation entre Suisse et autres régions /
-        # entre Toutes positions prof et les autres
+
+        # line separating the global value "Suisse" / "Position professionnelle - Total" and the following
+        fig.add_vline(
+            x=0.5,  # between first serie (x=0) and second (x=1)
+            line_width=1,
+            line_color="white"
+        )
 
         fig.update_layout(
             boxmode='group',
-            title=title
-        )
-        fig.update_yaxes(title="Salaire en CHF")
+            title=title,
+            margin=dict(l=40, r=20, t=30, b=40),  # narrow margins
+            )
+        fig.update_yaxes(
+            title="Salaire en CHF",
+            rangemode="tozero",  # display the 0 value
+            hoverformat=",.0f",  # see https://github.com/d3/d3-format/tree/v1.4.5#d3-format
+            )
         graph = dcc.Graph(
             figure=fig,
-            config=dict(locale="fr"))
+            config=dict(locale="fr"),
+            style={"height": "500px"}
+            )
 
         return html.Div(children=[
             graph,

@@ -1,9 +1,6 @@
 from dash import dcc
-import dash_mantine_components as dmc
 
 from views.view import View
-from common.constants import ContainerIds
-import common.components as components
 
 
 class InfoView(View):
@@ -48,7 +45,10 @@ class InfoView(View):
             > Ecart salarial (%) = ((Médiane des salaires des hommes - Médiane des salaires des femmes) / Médiane des salaires des hommes) * 100
 
 
-            Ainsi une valeur de **20%** signifie : _Le salaire médian  des femmes est, **20%** inférieur à celui des hommes.
+            Ainsi :
+            
+            - une valeur de **20%** signifie : _Le salaire médian des femmes est **20% inférieur** à celui des hommes_.
+            - une valeur de **-10%** signifie : _Le salaire médian des femmes est **10% supérieur** à celui des hommes_.
 
             ### Contexte du projet   
             Cette application a été développée dans le cadre d'un projet du cours _Visualisation de l'information_ au sein de la HES-SO Master.
