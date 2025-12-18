@@ -37,7 +37,6 @@ class EvolutionView(View):
         )
 
     def renderEvolution(self, series, region, position):
-        # TOD0 replace by actual graph
         df = DATA.copy()
         title = ""
         if series == Series.POSITION:
@@ -62,7 +61,7 @@ class EvolutionView(View):
             markers=True,
             labels={
                 "Inequality": "Écart salarial (%)",
-                # "Year": "Année",
+                "Year": "Année",
                 line_field: line_field,
             },
             title=title,
@@ -70,6 +69,14 @@ class EvolutionView(View):
         fig.update_traces(marker=dict(size=10),
                           hovertemplate="Écart salarial: %{y:.2f}%<br>"
                         )
+        fig.update_yaxes(
+            ticks="outside",
+            tickcolor="rgba(0,0,0,0.6)",
+            )
+        fig.update_xaxes(
+            ticks="outside",
+            tickcolor="rgba(0,0,0,0.6)",
+            )
         fig.update_layout(margin=dict(t=60, r=20, l=20, b=40),
                           paper_bgcolor="rgba(0,0,0,0)",
                           plot_bgcolor="rgba(0,0,0,0)")

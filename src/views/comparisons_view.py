@@ -88,18 +88,22 @@ class ComparisonsView(View):
         fig.add_vline(
             x=0.5,  # between first serie (x=0) and second (x=1)
             line_width=1,
-            line_color="white"
+            line_color="lightgrey",
+            line_dash="dot"
         )
 
         fig.update_layout(
             boxmode='group',
             title=title,
             margin=dict(l=40, r=20, t=30, b=40),  # narrow margins
-            )
+            paper_bgcolor="rgba(0,0,0,0)",
+            plot_bgcolor="rgba(0,0,0,0)")
         fig.update_yaxes(
             title="Salaire en CHF",
             rangemode="tozero",  # display the 0 value
             hoverformat=",.0f",  # see https://github.com/d3/d3-format/tree/v1.4.5#d3-format
+            ticks="outside",
+            tickcolor="rgba(0,0,0,0.6)",
             )
         graph = dcc.Graph(
             figure=fig,
@@ -109,5 +113,5 @@ class ComparisonsView(View):
 
         return html.Div(children=[
             graph,
-            components.sourceInfo(),
+            components.sourceInfo("Source : OFS. Salaires du secteur Fabrication de produits informatiques, électroniques et optiques/horlogerie"),
         ])

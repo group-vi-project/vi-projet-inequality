@@ -79,9 +79,9 @@ def yearSelector():
     )
 
 
-def sourceInfo():
+def sourceInfo(text="Source : OFS. Salaires médians du secteur Fabrication de produits informatiques, électroniques et optiques/horlogerie"):
     return html.Div(
-                "Source : OFS. Salaires du secteur Fabrication de produits informatiques, électroniques et optiques/horlogerie",
+                text,
                 style={"text-align": "right"})
 
 
