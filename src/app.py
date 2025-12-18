@@ -6,6 +6,7 @@ from dash_iconify import DashIconify
 from views.comparisons_view import ComparisonsView
 from views.evolution_view import EvolutionView
 from views.map_view import MapView
+from views.info_view import InfoView
 
 from common.callbacks import get_callbacks
 
@@ -22,7 +23,8 @@ app = dash.Dash(
 VIEWS = [
     MapView(),
     EvolutionView(),
-    ComparisonsView()
+    ComparisonsView(),
+    InfoView(),
 ]
 
 

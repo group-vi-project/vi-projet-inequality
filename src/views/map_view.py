@@ -44,23 +44,21 @@ class MapView(View):
                 components.yearSelector()
             ],
         )
-    
 
     def color(self, value, cmap):
         if value is None:
             return "#dadada"  # grey
         return cmap(value)
 
-
     def renderMap(self, year, position):
-        min_value = -25.0 # dfinq["Inequality"].min()
-        max_value = 50.0 # dfinq["Inequality"].max()
+        min_value = -25.0   # dfinq["Inequality"].min()
+        max_value = 50.0    # dfinq["Inequality"].max()
 
         dfinq_filtered = dfinq.loc[
             (dfinq["Year"] == year) & (dfinq["Position"] == position)
         ]
         gdf = gdf_base.merge(dfinq_filtered[['Region', 'Inequality']],
-                                left_on='name', right_on='Region', how='left')
+                             left_on='name', right_on='Region', how='left')
         gdf = gdf.drop(columns=['id', 'name'])
 
         white_tile = branca.utilities.image_to_url([[1, 1], [1, 1]])
@@ -74,7 +72,9 @@ class MapView(View):
             location=(46.8, 8.2),
             zoom_start=zoom_value,
             min_zoom=zoom_value,
-            max_zoom=zoom_value,  # avoid zooming with double click. Only works when tiles != None (bizarre...)
+            # avoid zooming with double click.
+            # Only works when tiles != None (bizarre...)
+            max_zoom=zoom_value,
         )
 
         cmap = cm.LinearColormap(
@@ -88,7 +88,9 @@ class MapView(View):
         folium.GeoJson(
             gdf,
             style_function=lambda feature: {
-                "fillColor": self.color(feature["properties"]["Inequality"], cmap),
+                "fillColor": self.color(
+                    feature["properties"]["Inequality"],
+                    cmap),
                 "color": "black",
                 "weight": 0.5,
                 "fillOpacity": 1,
