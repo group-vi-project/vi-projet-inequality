@@ -30,7 +30,7 @@ gdf_base = gpd.read_file(geofile_path)
 class MapView(View):
 
     id = "map"
-    label = "Ecarts salariaux par région"
+    label = "Différences salariales femmes vs hommes par région"
     icon = "tabler:compass"
 
     def render(self):
