@@ -56,7 +56,7 @@ class EvolutionView(View):
             df,
             x="Year",
             y="Inequality",
-            # color=line_field,
+            color=line_field,
             line_dash=line_field,
             symbol=line_field,
             markers=True,
@@ -67,7 +67,12 @@ class EvolutionView(View):
             },
             title=title,
         )
-        fig.update_layout(margin=dict(t=60, r=20, l=20, b=40))
+        fig.update_traces(marker=dict(size=10),
+                          hovertemplate="Écart salarial: %{y:.2f}%<br>"
+                        )
+        fig.update_layout(margin=dict(t=60, r=20, l=20, b=40),
+                          paper_bgcolor="rgba(0,0,0,0)",
+                          plot_bgcolor="rgba(0,0,0,0)")
         return html.Div(children=[
             dcc.Graph(figure=fig),
             components.sourceInfo(),
