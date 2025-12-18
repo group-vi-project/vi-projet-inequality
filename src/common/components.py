@@ -1,4 +1,5 @@
 import dash_mantine_components as dmc
+from dash import html
 
 from common.constants import ComponentIds, Series
 
@@ -76,6 +77,12 @@ def yearSelector():
         marks=[{"value": year, "label": year}
                for year in range(2012, 2023, 2)],
     )
+
+
+def sourceInfo():
+    return html.Div(
+                "Source : OFS. Salaires du secteur Fabrication de produits informatiques, électroniques et optiques/horlogerie",
+                style={"text-align": "right"})
 
 
 # a nice container

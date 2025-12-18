@@ -67,10 +67,8 @@ class EvolutionView(View):
             },
             title=title,
         )
-        fig.update_traces(line=dict(color="black", width=2),marker=dict(size=10),
-                          hovertemplate="Écart salarial: %{y:.2f}%<br>"
-                        )
-        fig.update_layout(margin=dict(t=60, r=20, l=20, b=40),
-                          paper_bgcolor="rgba(0,0,0,0)",
-                          plot_bgcolor="rgba(0,0,0,0)")
-        return dcc.Graph(figure=fig)
+        fig.update_layout(margin=dict(t=60, r=20, l=20, b=40))
+        return html.Div(children=[
+            dcc.Graph(figure=fig),
+            components.sourceInfo(),
+        ])

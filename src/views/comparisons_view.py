@@ -97,4 +97,5 @@ class ComparisonsView(View):
 
         return html.Div(children=[
             graph,
+            components.sourceInfo(),
         ])
