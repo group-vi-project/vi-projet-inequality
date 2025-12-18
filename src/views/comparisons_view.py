@@ -97,4 +97,4 @@ class ComparisonsView(View):
 
         return html.Div(children=[
             graph,
-            ])
+        ])
