@@ -73,6 +73,12 @@ class EvolutionView(View):
         fig.update_layout(margin=dict(t=60, r=20, l=20, b=40),
                           paper_bgcolor="rgba(0,0,0,0)",
                           plot_bgcolor="rgba(0,0,0,0)")
+        
+        fig.update_yaxes(
+            showgrid=True,
+            gridwidth=0.5,          # thin lines
+            gridcolor="rgba(0,0,0,0.2)"  # light color (adjust as you like)
+        )
         return html.Div(children=[
             dcc.Graph(figure=fig),
             components.sourceInfo(),
